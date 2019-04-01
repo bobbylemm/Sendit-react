@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the button element should mount button 1`] = `
+.c0 {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0.1rem solid #78bdd2;
+  box-shadow: 0rem 0.4rem 0.5rem -0.1rem rgba(0,0,0,0.62);
+  background: #fff;
+}
+
+<table
+  className="c0"
+/>
+`;
+
+exports[`testing the button element should mount button 2`] = `
+.c0 {
+  text-align: center;
+}
+
+@media (max-width:650px) {
+  .c0 {
+    display: block;
+    font-size: 1.5rem;
+    margin: 0.4rem;
+  }
+
+  .c0 .parcel-detail {
+    float: right;
+    margin: 0 1rem 0 0;
+  }
+}
+
+<td
+  className="c0"
+/>
+`;
+
+exports[`testing the button element should mount button 3`] = `
+.c0 {
+  width: 11rem;
+  padding: 0 0.6rem;
+}
+
+@media (max-width:650px) {
+  .c0 {
+    padding: 0 4px;
+    width: 117px;
+  }
+}
+
+<td
+  className="c0"
+/>
+`;
+
+exports[`testing the button element should mount button 4`] = `
+.c0 {
+  border: 0.1rem solid #89bdd3;
+  background: #89bdd3;
+}
+
+<th
+  className="c0"
+/>
+`;
+
+exports[`testing the button element should mount button 5`] = `
+@media (max-width:650px) {
+  .c0 {
+    display: none;
+    content: attr(data-title);
+  }
+}
+
+<thead
+  className="c0"
+/>
+`;
+
+exports[`testing the button element should mount button 6`] = `
+.c0 {
+  text-align: center;
+  height: 5.2rem;
+}
+
+<tr
+  className="c0"
+/>
+`;
+
+exports[`testing the button element should mount button 7`] = `
+.c0 {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  display: none;
+}
+
+@media (max-width:650px) {
+  .c0 {
+    display: inline-block;
+    margin: 0 5rem 0 1rem;
+    float: none !important;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`testing the button element should mount button 8`] = `
+.c0 {
+  margin: 0 1rem 0 0;
+  color: #1A1A1C;
+}
+
+@media (max-width:650px) {
+  .c0 {
+    float: right;
+  }
+}
+
+<span
+  className="c0"
+/>
+`;

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the Table component should mount the Table component 1`] = `ShallowWrapper {}`;
+
+exports[`the table row component should mount the table row data 1`] = `ShallowWrapper {}`;

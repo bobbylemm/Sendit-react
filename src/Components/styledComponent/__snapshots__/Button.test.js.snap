@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the button element should mount button 1`] = `
+.c0 {
+  background: #3AAFA9;
+  border-radius: 0.3rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0.1rem solid #3AAFA9;
+  margin: 1rem;
+  padding: 1.2rem 0.5rem;
+  box-shadow: -0.1rem 0.3rem 0.5rem 0rem rgba(0,0,0,0.66);
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: block;
+}
+
+<button
+  className="c0"
+/>
+`;
