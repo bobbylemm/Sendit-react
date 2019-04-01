@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the button element should mount button 1`] = `
+.c0 {
+  background: #ffffff;
+  color: #333;
+  min-width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 1.4rem;
+  box-shadow: 0rem 0.3rem 0.8rem -0.1rem rgba(0,0,0,0.55);
+}
+
+<header
+  className="c0"
+/>
+`;
+
+exports[`testing the button element should mount button 2`] = `
+.c0 {
+  float: right;
+  margin-top: 1.7rem;
+}
+
+@media (max-width:600px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    float: none;
+  }
+}
+
+<nav
+  className="c0"
+/>
+`;

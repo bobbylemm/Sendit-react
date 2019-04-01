@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the button element should mount button 1`] = `
+.c0 {
+  background: #312c32;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 3rem 6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.c0 span a {
+  color: rgb(173,166,166);
+}
+
+<footer
+  className="c0"
+/>
+`;
