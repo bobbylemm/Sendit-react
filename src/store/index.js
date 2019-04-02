@@ -2,6 +2,7 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import throttle from 'lodash/throttle';
+import reducer from './reducers';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const loadState = () => {
@@ -17,13 +18,9 @@ const loadState = () => {
 };
 const persistedState = loadState();
 
-const store = createStore(
-  null,
-  persistedState,
-  composeEnhancers(applyMiddleware(thunk))
-);
+const store = createStore(reducer, persistedState, composeEnhancers(applyMiddleware(thunk)));
 
-const saveState = state => {
+const saveState = (state) => {
   try {
     const serializedState = JSON.stringify(state);
     return localStorage.setItem('state', serializedState);
