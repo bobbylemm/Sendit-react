@@ -21,8 +21,12 @@ const Thead = styled.thead`
 `;
 
 const Tr = styled.tr`
-  text-align: center;
   height: 5.2rem;
+  @media (max-width: 650px) {
+    tr {
+      text-align: unset !important;
+    }
+  }
 `;
 
 const Td = styled.td`
@@ -32,6 +36,7 @@ const Td = styled.td`
     display: block;
     font-size: 1.5rem;
     margin: 0.4rem;
+    text-align: unset;
 
     .parcel-detail {
       float: right;
@@ -73,7 +78,7 @@ const SpanView = styled.span`
 `;
 
 const Select = styled.select`
-  padding: 0.9rem 0.6rem;
+  padding: 0.35rem 0.6rem;
   min-width: 80%;
   background: transparent;
   border-radius: 0.3rem;
@@ -84,6 +89,4 @@ const Select = styled.select`
   }
 `;
 
-export {
-  Table, Th, Tr, Td, Tdbig, Thead, SpanView, SpanMobileView, Select
-};
+export { Table, Th, Tr, Td, Tdbig, Thead, SpanView, SpanMobileView, Select };

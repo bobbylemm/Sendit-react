@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../css/homePage.scss';
 import Button from '../../components/styledComponent/Button';
+import createOrderPic from '../../images/create-order.jpg';
+import editOrderPic from '../../images/maarten-van-den-heuvel-246398-unsplash.jpg';
+import trackOrderPic from '../../images/rhys-moult-328651-unsplash.jpg';
+import receiveOrderPic from '../../images/receive-parcel.jpg';
 
 const Homepage = () => (
   <div className="hm">
@@ -92,8 +96,7 @@ const Homepage = () => (
           <div>
             <h2>Create a new delivery</h2>
             <div className="description-cards">
-              {/* eslint-disable-next-line global-require */}
-              <img src="../../images/create-order.jpg" alt="card" />
+              <img src={createOrderPic} alt="card" />
               <p>
                 Generate your parcel delivery, weighing from 100kg - 1000000kg.
               </p>
@@ -102,11 +105,7 @@ const Homepage = () => (
           <div>
             <h2>Edit a delivery</h2>
             <div className="description-cards">
-              {/* eslint-disable-next-line global-require */}
-              <img
-                src="../../images/maarten-van-den-heuvel-246398-unsplash.jpg"
-                alt="edit"
-              />
+              <img src={editOrderPic} alt="edit" />
               <p>
                 Edit your parsel delivery, and arrange them according to your
                 choice.
@@ -119,10 +118,7 @@ const Homepage = () => (
           <div>
             <h2>Track a delivery</h2>
             <div className="description-cards">
-              <img
-                src="../../images/rhys-moult-328651-unsplash.jpg"
-                alt="card"
-              />
+              <img src={trackOrderPic} alt="track-card" />
               <p>
                 Be aware of your package location at every given point in time
               </p>
@@ -131,8 +127,7 @@ const Homepage = () => (
           <div>
             <h2>Recieve delivery on time</h2>
             <div className="description-cards">
-              {/* eslint-disable-next-line global-require */}
-              <img src="../../images/receive-parcel.jpg" alt="recieve" />
+              <img src={receiveOrderPic} alt="receive-order-pic" />
               <p>Expect your package at the given time</p>
             </div>
           </div>

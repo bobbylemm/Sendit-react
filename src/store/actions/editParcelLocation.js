@@ -15,17 +15,22 @@ const editParcelLocation = (id, newLocation) => async (dispatch, getState) => {
       `${config.apiUrl}/parcels/${id}/currentlocation`,
       {
         newLocation:
-          newLocation
-          || state.allParcels.data.find(parcel => parcel.parcel_id === id).present_location
+          newLocation ||
+          state.allParcels.data.find(parcel => parcel.parcel_id === id)
+            .present_location
       },
       { headers: { 'x-auth-token': getState().auth.data.accessToken } }
     );
-    state.allParcels.data.find(parcel => parcel.parcel_id === id).present_location = newLocation;
+    state.allParcels.data.find(
+      parcel => parcel.parcel_id === id
+    ).present_location = newLocation;
     dispatch({
       type: ADMIN_EDIT_PARCEL_SUCCESS,
-      payload: state.allParcels
+      payload: state.allParcels.data
     });
-    return toast.success(<div>Successfully updated parcel present location ADMIN</div>);
+    return toast.success(
+      <div>Successfully updated parcel present location ADMIN</div>
+    );
   } catch (errors) {
     dispatch({
       type: ADMIN_EDIT_PARCEL_ERROR,

@@ -608,12 +608,11 @@ td .mobile-view-title {
     margin: 1rem auto;
   }
   tr {
-    text-align: unset;
+    text-align: unset !important;
   }
   td .mobile-view-title {
     display: inline-block;
     margin: 0 5rem 0 1rem;
-    float: none !important;
     font-weight: 700;
     text-transform: uppercase;
   }

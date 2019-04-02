@@ -2,8 +2,8 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-// eslint-disable-next-line import/extensions
-import { Header, Nav } from '../styledComponent/NavbarComp.jsx';
+import PropTypes from 'prop-types';
+import { Header, Nav } from '../styledComponent/NavbarComp';
 
 export const NavBar = ({ isAdmin, loggedIn }) => (
   <Header>
@@ -56,4 +56,8 @@ const hoc = connect(
   mapStateToProps,
   null
 );
+NavBar.propTypes = {
+  isAdmin: PropTypes.bool,
+  loggedIn: PropTypes.bool
+};
 export default hoc(NavBar);

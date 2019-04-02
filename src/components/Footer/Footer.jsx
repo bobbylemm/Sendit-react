@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// eslint-disable-next-line import/extensions
-import FooterComponent from '../styledComponent/FooterComp.jsx';
+import FooterComponent from '../styledComponent/FooterComp';
 
 const Footer = () => (
   <FooterComponent>
     <p>© 2018 no rights reservered</p>
     <p>
-      Designed by
-      {' '}
+      Designed by{' '}
       <span>
         <Link to="#">Nwoga Chidozie</Link>
       </span>

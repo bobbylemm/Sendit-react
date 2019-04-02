@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import Navbar from './components/Navbar/index';
 import 'react-toastify/dist/ReactToastify.min.css';
 import AppRouter from './AppRouter/index';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Navbar />
         <ToastContainer autoClose={3000} position="top-right" />
         <AppRouter />
+        <Footer />
       </Fragment>
     );
   }

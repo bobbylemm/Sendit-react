@@ -1,1 +1,1 @@
-export { default } from './NavbarComp';
+export { Header, Nav } from './NavbarComp';
