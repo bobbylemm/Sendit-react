@@ -1,0 +1,228 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+main {
+  flex: 1;
+}
+.db {
+  display: block !important;
+  animation: fadeIn 0.8s ease-in-out;
+}
+.dn {
+  display: none !important;
+  animation: fadeIn 0.8s ease-in-out;
+}
+.section {
+  display: flex;
+  height: 100%;
+}
+.td {
+  width: 12rem;
+}
+.profile-pic {
+  height: 14rem;
+  width: 14rem;
+  margin: 1rem;
+}
+.profilePic {
+  background: url('../images/profilePic.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+span {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+}
+span:focus {
+  color: #767c80;
+  border: 0.5rem solid #a5b6bd;
+  outline: none;
+}
+/* the styling for the get started section */
+.dashboard {
+  border: 1px solid #89bdd3;
+  height: 100%;
+}
+.dashboard-min {
+  background: #89bdd3;
+  text-align: center;
+}
+.dashboard h1 {
+  font-size: 2.5rem;
+  background: #89bdd3;
+  color: #333;
+  text-align: center;
+}
+.dashboard-lar {
+  min-height: 100%;
+}
+.pstatus {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.pcancel {
+  padding: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 0.2rem solid rgba(71, 69, 69, 0.712);
+}
+@media (max-width: 600px) {
+  .section {
+    display: block;
+  }
+  .profile-pic {
+    height: 10rem;
+    width: 14rem;
+  }
+  .col-2 {
+    display: block;
+    width: 100%;
+  }
+  .dashboard {
+    padding: 1rem;
+  }
+  .dashboard-lar {
+    width: 100%;
+    min-height: 34rem;
+  }
+  header {
+    padding-bottom: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+#user-ft {
+  padding: 2rem;
+}
+#user-ft h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+.btn-profile {
+  width: 17rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 4rem;
+  border: 0.1rem solid #e6e2dd;
+  background: #e6e2dd;
+  box-shadow: 0.2rem 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.5rem;
+  outline: none;
+}
+.btn-profile:hover {
+  box-shadow: 0.3rem 0.4rem 0.5rem 0 rgba(0, 0, 0, 0.75);
+}
+
+.btn-one-ft {
+  display: block;
+  animation: fadeIn 0.8s ease-in-out;
+}
+.btn-two-ft {
+  display: none;
+  animation: fadeIn 0.8s ease-in-out;
+}
+#btn-two-ft h2 {
+  text-align: center;
+  margin: 1rem;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(1rem);
+  }
+  70% {
+    transform: translateY(1.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* this is for the modal section */
+#modal-edit,
+#modal-cancel {
+  display: none;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.62);
+}
+#modal-content-edit {
+  color: #333;
+  margin: 30% 35%;
+  animation: fadeIn 0.4s ease-in-out;
+  border-radius: 1rem;
+  text-align: center;
+}
+#modal-content-cancel {
+  color: #333;
+  margin: 30% 35%;
+  animation: fadeIn 0.4s ease-in-out;
+  border-radius: 1rem;
+  text-align: center;
+}
+#modal-content-cancel h3 {
+  text-align: center;
+}
+#modal-content-cancel .container {
+  display: flex;
+}
+#close {
+  cursor: pointer;
+  font-weight: 700;
+  float: right;
+  color: #333;
+  font-size: 3rem;
+}
+.dropoff-input {
+  margin-top: 1.1rem;
+  border: 0rem solid #fff;
+  padding: 0 1rem;
+  width: 5rem;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}

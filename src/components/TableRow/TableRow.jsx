@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 import {
   Td,
@@ -287,4 +288,37 @@ class TableRow extends Component {
     );
   }
 }
+TableRow.propTypes = {
+  tableNames: PropTypes.array,
+  parcels: PropTypes.object,
+  users: PropTypes.object,
+  handleEdit: PropTypes.func,
+  handleSelect: PropTypes.func,
+  handleCancel: PropTypes.func,
+  editAdminStatus: PropTypes.func,
+  editDropOffLocation: PropTypes.func,
+  cancelParcel: PropTypes.func,
+  editParcelLocation: PropTypes.func,
+  currentOption: PropTypes.string,
+  editState: PropTypes.bool,
+  editParcelStatus: PropTypes.func,
+  handleInput: PropTypes.func,
+  profileTable: PropTypes.bool,
+  adminTable: PropTypes.bool,
+  superAdminTable: PropTypes.bool,
+  userParcels: PropTypes.object,
+  userId: PropTypes.number,
+  parcelId: PropTypes.number,
+  userName: PropTypes.string,
+  userEmail: PropTypes.string,
+  isAdmin: PropTypes.bool,
+  packageName: PropTypes.string,
+  dropoffLocation: PropTypes.string,
+  pickupLocation: PropTypes.string,
+  presentLocation: PropTypes.string,
+  weight: PropTypes.number,
+  price: PropTypes.number,
+  status: PropTypes.string,
+  cancelled: PropTypes.bool
+};
 export default TableRow;

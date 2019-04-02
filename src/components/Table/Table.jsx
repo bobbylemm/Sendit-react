@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Table, Th, Thead } from '../styledComponent/TableComp/TableComp';
 import TableRow from '../TableRow';
 
@@ -73,5 +74,26 @@ const Parcels = ({
     </tbody>
   </Table>
 );
+
+Parcels.propTypes = {
+  tableNames: PropTypes.array,
+  parcels: PropTypes.object,
+  users: PropTypes.object,
+  handleEdit: PropTypes.func,
+  handleSelect: PropTypes.func,
+  handleCancel: PropTypes.func,
+  editAdminStatus: PropTypes.func,
+  editDropOffLocation: PropTypes.func,
+  cancelParcel: PropTypes.func,
+  editParcelLocation: PropTypes.func,
+  currentOption: PropTypes.string,
+  editState: PropTypes.bool,
+  editParcelStatus: PropTypes.func,
+  handleInput: PropTypes.func,
+  profileTable: PropTypes.bool,
+  adminTable: PropTypes.bool,
+  superAdminTable: PropTypes.bool,
+  userParcels: PropTypes.object
+};
 
 export default Parcels;
