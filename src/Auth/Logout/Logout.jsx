@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { logoutUser } from '../../store/actions/authUser';
 
 export class Logout extends Component {
@@ -13,11 +14,15 @@ export class Logout extends Component {
     return null;
   }
 }
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   logoutUsers: () => dispatch(logoutUser())
 });
 const hoc = connect(
   null,
   mapDispatchToProps
 );
+Logout.propTypes = {
+  logoutUsers: PropTypes.func,
+  history: PropTypes.object
+};
 export default hoc(Logout);

@@ -1,41 +1,25 @@
 import { mount, shallow } from 'enzyme';
 import React from 'react';
-import Logout from '../../../Auth/Logout';
+import LogOut, { Logout, mapDispatchToProps } from '../../../Auth/Logout';
 
 const props = {
   history: { push: jest.fn() },
   logoutUsers: jest.fn()
 };
 
-describe('Test the snapshot of the admin page', () => {
+describe('Test the snapshot of the logout page', () => {
   it('should match the snapshot', () => {
-    const wrapper = shallow(<Logout {...props} />);
+    const wrapper = shallow(<LogOut {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
-  // it('should check state', () => {
-  //   const handleSelect = jest.fn();
-  //   const handleEdit = jest.fn();
-  //   const handleCancel = jest.fn();
-  //   const handleInput = jest.fn();
-  //   const wrapper = mount(
-  //     <AdminPage
-  //       handleCancel={handleCancel}
-  //       handleEdit={handleEdit}
-  //       handleSelect={handleSelect}
-  //       handleInput={handleInput}
-  //       editState={false}
-  //       tableNames={tableNames} parcels={parcels}
-  //       {...props}
-  //     />
-  //   );
-  //   wrapper
-  //     .find('select')
-  //     .simulate('change', { currentTarget: { options: [{ innerHTML: 'in-transit' }] } });
-  //   wrapper
-  //     .find('span')
-  //     .at(4)
-  //     .simulate('input', { target: { innerHTML: 'samana' } });
-  //   wrapper.setState({ edit: false });
-  //   expect(wrapper.state('editedStatus')).toEqual('in-transit');
-  // });
+  it('should test mapDispatchToProps', () => {
+    const dispatch = jest.fn();
+    mapDispatchToProps(dispatch).logoutUsers();
+    expect(dispatch.mock.calls[0][0]).toBeDefined();
+  });
+  it('should test the mounted component', () => {
+    const wrapper = mount(<Logout {...props} />);
+    expect(props.history.push).toHaveBeenLastCalledWith('/');
+    expect(wrapper).toEqual({});
+  });
 });

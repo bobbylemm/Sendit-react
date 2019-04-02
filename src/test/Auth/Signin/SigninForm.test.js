@@ -67,13 +67,10 @@ describe('signup form component', () => {
     const form = wrapper4.find('form');
     const input1 = wrapper4.find('input').at(0);
     const input2 = wrapper4.find('input').at(1);
-    // const input3 = wrapper4.find('input').at(2);
     input1.simulate('change', { target: { value: 'sffffffff' } });
     input2.simulate('change', { target: { value: 'stufff@gmail.com' } });
-    // input3.simulate('change', { target: { value: 'sffffffff' } });
     form.simulate('submit');
     expect(loginUsers).toHaveBeenCalled();
-    // expect(history.push).toHaveBeenLastCalledWith('/');
   });
   describe('test mapStateToProps', () => {
     it('test mapStateToProps', () => {

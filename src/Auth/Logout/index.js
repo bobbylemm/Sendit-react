@@ -1,1 +1,1 @@
-export { default } from './Logout';
+export { mapDispatchToProps, Logout, default } from './Logout';

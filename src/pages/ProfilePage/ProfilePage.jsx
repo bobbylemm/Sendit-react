@@ -30,10 +30,10 @@ export class ProfilePage extends Component {
     };
   }
 
-  componentWillMount = () => {
+  componentDidMount() {
     const { getAllUserParcels } = this.props;
     getAllUserParcels();
-  };
+  }
 
   handleView1 = () => {
     this.setState({
