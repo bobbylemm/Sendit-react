@@ -1,12 +1,12 @@
 import { mount, shallow } from 'enzyme';
 import React from 'react';
-import Tablerow from './index';
+import Tablerow from '../../components/TableRow';
 import {
   Table,
   Select,
   SpanView
-} from '../styledComponent/TableComp/TableComp';
-import Button from '../styledComponent/Button';
+} from '../../components/styledComponent/TableComp/TableComp';
+import Button from '../../components/styledComponent/Button';
 
 const tableNames = [
   'Package id',

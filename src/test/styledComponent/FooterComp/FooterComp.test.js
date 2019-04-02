@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
-import FooterComp from './FooterComp';
+import FooterComp from '../../../components/styledComponent/FooterComp/FooterComp';
 
 describe('testing the button element', () => {
   it('should mount button', () => {

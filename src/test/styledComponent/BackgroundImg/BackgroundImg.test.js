@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
-import FormCard from './FormCard';
+import BackgroundImg from '../../../components/styledComponent/BackgroundImg/BackgroundImg';
 
 describe('testing the button element', () => {
   it('should mount button', () => {
-    const tree = renderer.create(<FormCard />).toJSON();
+    const tree = renderer.create(<BackgroundImg />).toJSON();
     expect(tree).toMatchSnapshot();
-    expect(tree).toHaveStyleRule('background', '#efefef');
+    expect(tree).toHaveStyleRule('background-position', 'center center');
   });
 });

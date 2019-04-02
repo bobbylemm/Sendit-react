@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Fragment, Component } from 'react';
-import AppRouter from './AppRouter/index';
+import AppRouter from './AppRouter';
 
 class App extends Component {
   render() {

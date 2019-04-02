@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Table from './index';
-import TableRow from '../TableRow';
+import Table from '../../components/Table';
+import TableRow from '../../components/TableRow';
 
 const tableNames = [
   'Package id',
@@ -30,7 +30,9 @@ describe('the Table component', () => {
 });
 describe('the table row component', () => {
   it('should mount the table row data', () => {
-    const tree = shallow(<TableRow parcels={parcels} tableNames={tableNames} />);
+    const tree = shallow(
+      <TableRow parcels={parcels} tableNames={tableNames} />
+    );
     expect(tree).toMatchSnapshot();
   });
 });

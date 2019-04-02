@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import {
   Table, Td, Tdbig, Th, Thead, Tr, SpanMobileView, SpanView, Select
-} from './TableComp';
+} from '../../../components/styledComponent/TableComp/TableComp';
 
 describe('testing the button element', () => {
   it('should mount button', () => {

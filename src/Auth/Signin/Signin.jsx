@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { loginUser } from '../../store/actions/authUser';
-import SigninForm from './SigninForm/index';
+import SigninForm from './SigninForm';
 
 export class Signin extends Component {
   componentDidUpdate() {

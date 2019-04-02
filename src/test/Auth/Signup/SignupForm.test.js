@@ -4,12 +4,12 @@ import { reducer as formReducer } from 'redux-form';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
-import SigninContainer, {
+import SignupContainer, {
   mapDispatchToProps,
   mapStateToProps,
-  Signin
-} from '../../Auth/Signin/index';
-import SigninForm from '../../Auth/Signin/SigninForm/index';
+  Signup
+} from '../../../Auth/Signup';
+import SignupForm from '../../../Auth/Signup/SignupForm';
 
 const mockStore = configureMockStore();
 
@@ -19,7 +19,7 @@ describe('signup form component', () => {
   let history;
   let wrapper4;
   let handleSubmit;
-  let loginUsers;
+  let registerUsers;
   const initialState = {
     auth: {
       data: {
@@ -32,14 +32,14 @@ describe('signup form component', () => {
     const store1 = createStore(combineReducers({ form: formReducer }));
     const user = 'dodo';
     handleSubmit = jest.fn();
-    loginUsers = jest.fn();
+    registerUsers = jest.fn();
     history = { push: jest.fn() };
-    wrapper = shallow(<SigninForm />);
+    wrapper = shallow(<SignupForm />);
     wrapper4 = mount(
       <Provider store={store1}>
-        <Signin
+        <Signup
           user={user}
-          loginUsers={loginUsers}
+          registerUsers={registerUsers}
           history={history}
           handleSubmit={handleSubmit}
         />
@@ -55,24 +55,21 @@ describe('signup form component', () => {
     const store = mockStore(initialState);
     const wrapper2 = mount(
       <Provider store={store}>
-        <SigninContainer />
+        <SignupContainer />
       </Provider>
     );
     expect(wrapper2.props().store.getState().auth.data.user).toBe('dadada');
-  });
-  it('should re-render', () => {
-    wrapper4.update();
   });
   it('should call the registerUser', () => {
     const form = wrapper4.find('form');
     const input1 = wrapper4.find('input').at(0);
     const input2 = wrapper4.find('input').at(1);
-    // const input3 = wrapper4.find('input').at(2);
+    const input3 = wrapper4.find('input').at(2);
     input1.simulate('change', { target: { value: 'sffffffff' } });
     input2.simulate('change', { target: { value: 'stufff@gmail.com' } });
-    // input3.simulate('change', { target: { value: 'sffffffff' } });
+    input3.simulate('change', { target: { value: 'sffffffff' } });
     form.simulate('submit');
-    expect(loginUsers).toHaveBeenCalled();
+    expect(registerUsers).toHaveBeenCalled();
     // expect(history.push).toHaveBeenLastCalledWith('/');
   });
   describe('test mapStateToProps', () => {
@@ -81,7 +78,7 @@ describe('signup form component', () => {
     });
     it('test mapDispatchToProps', () => {
       const dispatch = jest.fn();
-      mapDispatchToProps(dispatch).loginUsers();
+      mapDispatchToProps(dispatch).registerUsers();
       expect(dispatch.mock.calls[0][0]).toBeDefined();
     });
   });

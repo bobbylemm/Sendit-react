@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import AppRouter from './index';
+import AppRouter from '../../AppRouter';
 
 describe('Testing the AppRouter component', () => {
   const mockedDispatch = jest.fn();

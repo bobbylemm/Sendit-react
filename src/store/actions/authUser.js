@@ -1,7 +1,7 @@
 import Axios from 'axios';
 import React from 'react';
 import { toast } from 'react-toastify';
-import config from '../../config/index';
+import config from '../../config';
 
 export const LOGIN_USER_REQUEST = 'LOGIN_USER_REQUEST';
 export const LOGIN_USER_SUCCESS = 'LOGIN_USER_SUCCESS';
@@ -11,7 +11,7 @@ export const REGISTER_USER_REQUEST = 'REGISTER_USER_REQUEST';
 export const REGISTER_USER_SUCCESS = 'REGISTER_USER_SUCCESS';
 export const REGISTER_USER_ERROR = 'REGISTER_USER_ERROR';
 
-const loginUser = values => async (dispatch) => {
+const loginUser = values => async dispatch => {
   dispatch({ type: LOGIN_USER_REQUEST });
   try {
     const response = await Axios.post(`${config.apiUrl}/auth/login`, {
@@ -30,7 +30,7 @@ const loginUser = values => async (dispatch) => {
   }
 };
 
-const logoutUser = () => async (dispatch) => {
+const logoutUser = () => async dispatch => {
   try {
     localStorage.clear();
     dispatch({
@@ -42,7 +42,7 @@ const logoutUser = () => async (dispatch) => {
   }
 };
 
-const registerUser = values => async (dispatch) => {
+const registerUser = values => async dispatch => {
   dispatch({ type: REGISTER_USER_REQUEST });
   try {
     const response = await Axios.post(`${config.apiUrl}/auth/register`, {

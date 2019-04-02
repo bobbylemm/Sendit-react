@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
-import { Header, Nav } from './NavbarComp';
+import { Header, Nav } from '../../../components/styledComponent/NavbarComp/NavbarComp';
 
 describe('testing the button element', () => {
   it('should mount button', () => {

@@ -1,6 +1,6 @@
 import { mount, shallow } from 'enzyme';
 import React from 'react';
-import { Logout } from './index';
+import Logout from '../../../Auth/Logout';
 
 const props = {
   history: { push: jest.fn() },

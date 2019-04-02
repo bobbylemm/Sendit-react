@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 
-import signin from '../Auth/Signin/index';
-import signup from '../Auth/Signup/index';
-import logout from '../Auth/Logout/index';
+import signin from '../Auth/Signin';
+import signup from '../Auth/Signup';
+import logout from '../Auth/Logout';
 
 const AppRouter = () => (
   <Fragment>
