@@ -5,6 +5,8 @@ import React from 'react';
 import { reduxForm, Field } from 'redux-form';
 import Loader from 'react-loader-spinner';
 import '../../../css/signin.scss';
+import PropTypes from 'prop-types';
+
 import Button from '../../../components/styledComponent/Button';
 import InputField from '../../../components/Input/index';
 import BackgroungImg from '../../../components/styledComponent/BackgroundImg';
@@ -76,5 +78,10 @@ const SigninForm = ({ pristine, handleSubmit, submitting, isLoading }) => (
     </BackgroungImg>
   </main>
 );
-
+SigninForm.propTypes = {
+  handleSubmit: PropTypes.func,
+  pristine: PropTypes.bool,
+  submitting: PropTypes.bool,
+  isLoading: PropTypes.bool
+};
 export default reduxForm({ form: 'signin-form' })(SigninForm);
