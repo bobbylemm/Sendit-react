@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the snapshot of the home page should match the snapshot 1`] = `
+<div
+  className="hm"
+>
+  <main
+    id="slide-container"
+  >
+    <div
+      id="hero-bg"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="hero-text"
+        >
+          <h1>
+            Welcome to SendIt
+          </h1>
+          <div
+            className="hero-description"
+          >
+            <p>
+              SendIT is a courier service that helps users deliver parcels to different destinations.
+              <span
+                className="hide-on-small"
+              >
+                SendIT provides courier quotes based on weight categories.
+              </span>
+            </p>
+          </div>
+          <button
+            className="py-3 sc-bdVaJa gasapN"
+            type="button"
+          >
+            <a
+              href="/create-parcel"
+              onClick={[Function]}
+            >
+              Get started
+            </a>
+          </button>
+          <button
+            className="py-3 sc-bdVaJa gasapN"
+            type="button"
+          >
+            <a
+              href="/track-parcels"
+              onClick={[Function]}
+            >
+              Track deliveries
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="hero-bg-2"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="hero-text"
+        >
+          <h1>
+            Welcome to SendIt
+          </h1>
+          <div
+            className="hero-description"
+          >
+            <p>
+              SendIT is a courier service that helps users deliver parcels to different destinations.
+               
+              <span
+                className="hide-on-small"
+              >
+                SendIT provides courier quotes based on weight categories.
+              </span>
+            </p>
+          </div>
+          <button
+            className="py-3 sc-bdVaJa gasapN"
+            type="button"
+          >
+            <a
+              href="/create-parcel"
+              onClick={[Function]}
+            >
+              Get started
+            </a>
+          </button>
+          <button
+            className="py-3 sc-bdVaJa gasapN"
+            type="button"
+          >
+            <a
+              href="/track-parcels"
+              onClick={[Function]}
+            >
+              Track deliveries
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="hero-bg-3"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="hero-text"
+        >
+          <h1>
+            Welcome to SendIt
+          </h1>
+          <div
+            className="hero-description"
+          >
+            <p>
+              SendIT is a courier service that helps users deliver parcels to different destinations.
+               
+              <span
+                className="hide-on-small"
+              >
+                SendIT provides courier quotes based on weight categories.
+              </span>
+            </p>
+          </div>
+          <button
+            className="py-3 sc-bdVaJa gasapN"
+            type="button"
+          >
+            <a
+              href="/create-parcel"
+              onClick={[Function]}
+            >
+              Get started
+            </a>
+          </button>
+          <button
+            className="py-3 sc-bdVaJa gasapN"
+            type="button"
+          >
+            <a
+              href="/track-parcels"
+              onClick={[Function]}
+            >
+              Track deliveries
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <main
+    className="services"
+  >
+    <div
+      className="container"
+    >
+      <h3
+        className="services-title"
+      >
+        WHO WE ARE
+      </h3>
+      <h2
+        className="services-header"
+      >
+        <span
+          className="highlight"
+        >
+          Fast and accurate delivery
+        </span>
+         to your door steps
+      </h2>
+      <p>
+        Your parcels orders are our number one priority here at SendIt,With branches all over the world, SendIt has become a popularly reputable courier service that makes its customers/clients their priority
+      </p>
+    </div>
+    <div
+      className="container"
+    >
+      <div
+        className="how-to-use"
+      >
+        <div>
+          <h2>
+            Create a new delivery
+          </h2>
+          <div
+            className="description-cards"
+          >
+            <img
+              alt="card"
+              src="../../images/create-order.jpg"
+            />
+            <p>
+              Generate your parcel delivery, weighing from 100kg - 1000000kg.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            Edit a delivery
+          </h2>
+          <div
+            className="description-cards"
+          >
+            <img
+              alt="edit"
+              src="../../images/maarten-van-den-heuvel-246398-unsplash.jpg"
+            />
+            <p>
+              Edit your parsel delivery, and arrange them according to your choice.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="how-to-use"
+      >
+        <div>
+          <h2>
+            Track a delivery
+          </h2>
+          <div
+            className="description-cards"
+          >
+            <img
+              alt="card"
+              src="../../images/rhys-moult-328651-unsplash.jpg"
+            />
+            <p>
+              Be aware of your package location at every given point in time
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            Recieve delivery on time
+          </h2>
+          <div
+            className="description-cards"
+          >
+            <img
+              alt="recieve"
+              src="../../images/receive-parcel.jpg"
+            />
+            <p>
+              Expect your package at the given time
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;
