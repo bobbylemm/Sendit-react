@@ -1,7 +1,11 @@
 import { mount, shallow } from 'enzyme';
 import React from 'react';
 import Tablerow from './index';
-import { Table, Select, SpanView } from '../styledComponent/TableComp';
+import {
+  Table,
+  Select,
+  SpanView
+} from '../styledComponent/TableComp/TableComp';
 import Button from '../styledComponent/Button';
 
 const tableNames = [
@@ -22,8 +26,6 @@ describe('Test the table row', () => {
     expect(tree).toMatchSnapshot();
   });
   it('should call the handle select function', () => {
-    // const handleSelect = jest.fn();
-    // const handleClick = jest.fn();
     const wrapper = shallow(<Tablerow tableNames={tableNames} />);
     wrapper
       .find(Select)
@@ -64,7 +66,9 @@ describe('Test the table row', () => {
       editParcelStatus: jest.fn(),
       editDropOffLocation: jest.fn()
     };
-    const wrapper = shallow(<Tablerow {...props} profileTable tableNames={tableNames} />);
+    const wrapper = shallow(
+      <Tablerow {...props} profileTable tableNames={tableNames} />
+    );
     wrapper.setState({ editedDropOffLocation: 'ilaje' });
     wrapper
       .find(Button)

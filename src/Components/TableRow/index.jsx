@@ -2,8 +2,13 @@
 import React, { Component, Fragment } from 'react';
 
 import {
-  Td, Tdbig, Tr, SpanView, SpanMobileView, Select
-} from '../styledComponent/TableComp';
+  Td,
+  Tdbig,
+  Tr,
+  SpanView,
+  SpanMobileView,
+  Select
+} from '../styledComponent/TableComp/TableComp';
 import Button from '../styledComponent/Button';
 
 class TableRow extends Component {
@@ -16,9 +21,10 @@ class TableRow extends Component {
     editedDropOffLocation: ''
   };
 
-  handleSelect = async (e) => {
+  handleSelect = async e => {
     const { profileTable, superAdminTable } = this.props;
-    const newStatus = e.currentTarget.options[e.currentTarget.options.selectedIndex].innerHTML;
+    const newStatus =
+      e.currentTarget.options[e.currentTarget.options.selectedIndex].innerHTML;
     if (!profileTable && !superAdminTable) {
       this.setState({
         newStatus
@@ -53,7 +59,7 @@ class TableRow extends Component {
     }
   };
 
-  handleInput = async (e) => {
+  handleInput = async e => {
     const { profileTable } = this.props;
     if (profileTable) {
       return this.setState({
@@ -70,7 +76,7 @@ class TableRow extends Component {
     await cancelParcel(parcelId);
   };
 
-  handleEdit = async (e) => {
+  handleEdit = async e => {
     const {
       userId,
       parcelId,
@@ -83,7 +89,11 @@ class TableRow extends Component {
       adminTable,
       editDropOffLocation
     } = this.props;
-    const { newStatus, editedPresentLocation, editedDropOffLocation } = this.state;
+    const {
+      newStatus,
+      editedPresentLocation,
+      editedDropOffLocation
+    } = this.state;
     let id;
     if (parcelId) {
       id = parcelId.toString();
@@ -162,9 +172,14 @@ class TableRow extends Component {
             <Td>
               <SpanMobileView>{tableNames[4]}</SpanMobileView>
               <SpanView>
-                <Select id={userId} onChange={e => this.handleSelect(e)} disabled={!clicked}>
+                <Select
+                  id={userId}
+                  onChange={e => this.handleSelect(e)}
+                  disabled={!clicked}>
                   <option value={isAdmin}>{String(isAdmin)}</option>
-                  <option value={isAdmin}>{String(isAdmin) === 'true' ? 'false' : 'true'}</option>
+                  <option value={isAdmin}>
+                    {String(isAdmin) === 'true' ? 'false' : 'true'}
+                  </option>
                 </Select>
               </SpanView>
             </Td>
@@ -191,8 +206,7 @@ class TableRow extends Component {
                 <SpanView
                   contentEditable={clicked || false}
                   suppressContentEditableWarning
-                  onInput={e => this.handleInput(e)}
-                >
+                  onInput={e => this.handleInput(e)}>
                   {dropoffLocation}
                 </SpanView>
               ) : (
@@ -211,8 +225,7 @@ class TableRow extends Component {
                 <SpanView
                   contentEditable={clicked || false}
                   suppressContentEditableWarning
-                  onInput={e => this.handleInput(e)}
-                >
+                  onInput={e => this.handleInput(e)}>
                   {presentLocation}
                 </SpanView>
               )}
@@ -235,10 +248,9 @@ class TableRow extends Component {
                       status === 'delivered'
                         ? 'delivered'
                         : status === 'in-transit'
-                          ? 'in-transit'
-                          : 'processing'
-                    }
-                  >
+                        ? 'in-transit'
+                        : 'processing'
+                    }>
                     <option value={status}>{status}</option>
                     <option value={option1}>{option1}</option>
                     <option value={option2}>{option2}</option>
@@ -252,7 +264,10 @@ class TableRow extends Component {
             </Td>
             <Td>
               <SpanMobileView>{tableNames[8]}</SpanMobileView>
-              <SpanView className={cancelled ? 'uncancelled-parcel' : 'cancelled-parcel'}>
+              <SpanView
+                className={
+                  cancelled ? 'uncancelled-parcel' : 'cancelled-parcel'
+                }>
                 {String(cancelled)}
               </SpanView>
             </Td>

@@ -8,8 +8,8 @@ import SignupContainer, {
   mapDispatchToProps,
   mapStateToProps,
   Signup
-} from './index';
-import SignupForm from './SignupForm/index';
+} from '../../Auth/Signup/index';
+import SignupForm from '../../Auth/Signup/SignupForm/index';
 
 const mockStore = configureMockStore();
 

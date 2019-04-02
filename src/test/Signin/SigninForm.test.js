@@ -4,22 +4,16 @@ import { reducer as formReducer } from 'redux-form';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import configureMockStore from 'redux-mock-store';
-import SigninContainer, { mapDispatchToProps, mapStateToProps, Signin } from './index';
-import SigninForm from './SigninForm/index';
+import SigninContainer, {
+  mapDispatchToProps,
+  mapStateToProps,
+  Signin
+} from '../../Auth/Signin/index';
+import SigninForm from '../../Auth/Signin/SigninForm/index';
 
 const mockStore = configureMockStore();
 
 jest.mock('axios');
-// const mockStore = configureMockStore();
-// test('should mount the signup container', () => {
-//   const handleSubmit = jest.fn();
-//   const wrapper = shallow(<SignupContainer />);
-//   expect(wrapper).toMatchSnapshot();
-// });
-// test('should mount signup form', () => {
-//   const wrapper = shallow(<SignupForm />);
-//   expect(wrapper).toMatchSnapshot();
-// });
 describe('signup form component', () => {
   let wrapper;
   let history;
@@ -43,7 +37,12 @@ describe('signup form component', () => {
     wrapper = shallow(<SigninForm />);
     wrapper4 = mount(
       <Provider store={store1}>
-        <Signin user={user} loginUsers={loginUsers} history={history} handleSubmit={handleSubmit} />
+        <Signin
+          user={user}
+          loginUsers={loginUsers}
+          history={history}
+          handleSubmit={handleSubmit}
+        />
       </Provider>
     );
   });

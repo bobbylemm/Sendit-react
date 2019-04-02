@@ -1,7 +1,7 @@
-node_modules
+/node_modules
 coverage
-dist/
-.env
+/coverage.data
+/coverage/
 **/.DS_Store
 public/*
 !public/index.html
