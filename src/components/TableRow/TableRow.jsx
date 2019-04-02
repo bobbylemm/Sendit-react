@@ -290,8 +290,8 @@ class TableRow extends Component {
 }
 TableRow.propTypes = {
   tableNames: PropTypes.array,
-  parcels: PropTypes.object,
-  users: PropTypes.object,
+  parcels: PropTypes.array,
+  users: PropTypes.array,
   handleEdit: PropTypes.func,
   handleSelect: PropTypes.func,
   handleCancel: PropTypes.func,

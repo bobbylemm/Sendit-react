@@ -70,7 +70,6 @@ describe('signup form component', () => {
     input3.simulate('change', { target: { value: 'sffffffff' } });
     form.simulate('submit');
     expect(registerUsers).toHaveBeenCalled();
-    // expect(history.push).toHaveBeenLastCalledWith('/');
   });
   describe('test mapStateToProps', () => {
     it('test mapStateToProps', () => {

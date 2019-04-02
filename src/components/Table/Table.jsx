@@ -77,8 +77,8 @@ const Parcels = ({
 
 Parcels.propTypes = {
   tableNames: PropTypes.array,
-  parcels: PropTypes.object,
-  users: PropTypes.object,
+  parcels: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+  users: PropTypes.array,
   handleEdit: PropTypes.func,
   handleSelect: PropTypes.func,
   handleCancel: PropTypes.func,
