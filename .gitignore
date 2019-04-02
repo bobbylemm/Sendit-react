@@ -1,1 +1,9 @@
 /node_modules
+coverage
+/coverage.data
+/coverage/
+**/.DS_Store
+public/*
+!public/index.html
+!public/assets
+!public/favicon.ico
