@@ -10,6 +10,7 @@ import Button from '../../../components/styledComponent/Button';
 import InputField from '../../../components/Input';
 import BackgroungImg from '../../../components/styledComponent/BackgroundImg';
 import FormCard from '../../../components/styledComponent/FormCard';
+import { validateRegistrationForm } from '../../../helpers/index';
 
 const SignupForm = ({ pristine, handleSubmit, submitting, isLoading }) => (
   <main>
@@ -22,7 +23,7 @@ const SignupForm = ({ pristine, handleSubmit, submitting, isLoading }) => (
       <FormCard>
         <h2>Signup</h2>
         <form id="form" onSubmit={handleSubmit}>
-          <div className="row">
+          <div className="row my-1">
             <div className="col-3">
               <label className="label" htmlFor="username">
                 Username
@@ -40,7 +41,7 @@ const SignupForm = ({ pristine, handleSubmit, submitting, isLoading }) => (
             </div>
           </div>
           {/*  */}
-          <div className="row">
+          <div className="row my-1">
             <div className="col-3">
               <label className="label" htmlFor="email">
                 Email
@@ -58,7 +59,7 @@ const SignupForm = ({ pristine, handleSubmit, submitting, isLoading }) => (
             </div>
           </div>
           {/*  */}
-          <div className="row">
+          <div className="row my-1">
             <div className="col-3">
               <label className="label" htmlFor="password">
                 Password
@@ -109,5 +110,6 @@ SignupForm.propTypes = {
 };
 
 export default reduxForm({
-  form: 'register-form'
+  form: 'register-form',
+  validate: validateRegistrationForm
 })(SignupForm);

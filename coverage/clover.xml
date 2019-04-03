@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1554221379617" clover="3.2.0">
-  <project timestamp="1554221379618" name="All files">
-    <metrics statements="340" coveredstatements="309" conditionals="109" coveredconditionals="82" methods="107" coveredmethods="88" elements="556" coveredelements="479" complexity="0" loc="340" ncloc="340" packages="25" files="49" classes="49"/>
+<coverage generated="1554288684269" clover="3.2.0">
+  <project timestamp="1554288684269" name="All files">
+    <metrics statements="388" coveredstatements="343" conditionals="146" coveredconditionals="107" methods="113" coveredmethods="91" elements="647" coveredelements="541" complexity="0" loc="388" ncloc="388" packages="26" files="51" classes="51"/>
     <package name="AppRouter">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="AppRouter.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/AppRouter/AppRouter.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/AppRouter/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -57,44 +57,46 @@
         <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="14" count="2" type="stmt"/>
         <line num="15" count="12" type="stmt"/>
-        <line num="80" count="2" type="stmt"/>
+        <line num="79" count="2" type="stmt"/>
       </file>
     </package>
     <package name="Auth.Signup">
-      <metrics statements="11" coveredstatements="8" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="5"/>
+      <metrics statements="12" coveredstatements="9" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="5"/>
       <file name="Signup.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/Auth/Signup/Signup.jsx">
-        <metrics statements="11" coveredstatements="8" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <metrics statements="12" coveredstatements="9" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="5"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="11" count="0" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="21" count="7" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/Auth/Signup/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="Auth.Signup.SignupForm">
-      <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="index.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/Auth/Signup/SignupForm/index.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="11" type="stmt"/>
-        <line num="104" count="2" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="18" type="stmt"/>
+        <line num="105" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components.Input">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="Input.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/components/Input/Input.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="76" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="13" count="117" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/components/Input/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -169,9 +171,9 @@
         <line num="210" count="1" type="stmt"/>
         <line num="229" count="1" type="stmt"/>
         <line num="246" count="1" type="stmt"/>
-        <line num="276" count="2" type="stmt"/>
-        <line num="280" count="1" type="stmt"/>
-        <line num="291" count="6" type="stmt"/>
+        <line num="280" count="2" type="stmt"/>
+        <line num="287" count="1" type="stmt"/>
+        <line num="298" count="6" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/components/TableRow/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -192,10 +194,10 @@
       <file name="Button.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/components/styledComponent/Button/Button.jsx">
         <metrics statements="5" coveredstatements="5" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="40" type="cond" truecount="2" falsecount="0"/>
-        <line num="10" count="40" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="40" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="40" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="44" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="44" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="44" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="44" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/components/styledComponent/Button/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -241,12 +243,12 @@
         <line num="11" count="7" type="stmt"/>
         <line num="16" count="7" type="stmt"/>
         <line num="23" count="7" type="stmt"/>
-        <line num="28" count="7" type="stmt"/>
-        <line num="43" count="7" type="stmt"/>
-        <line num="52" count="7" type="stmt"/>
-        <line num="66" count="7" type="stmt"/>
-        <line num="68" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="75" count="7" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="48" count="7" type="stmt"/>
+        <line num="57" count="7" type="stmt"/>
+        <line num="71" count="7" type="stmt"/>
+        <line num="73" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="7" type="stmt"/>
       </file>
     </package>
     <package name="config">
@@ -255,11 +257,45 @@
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
+    <package name="helpers">
+      <metrics statements="28" coveredstatements="25" conditionals="28" coveredconditionals="23" methods="2" coveredmethods="2"/>
+      <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/helpers/index.js">
+        <metrics statements="28" coveredstatements="25" conditionals="28" coveredconditionals="23" methods="2" coveredmethods="2"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="17" type="stmt"/>
+        <line num="6" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="15" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="14" type="stmt"/>
+        <line num="17" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="16" type="stmt"/>
+        <line num="25" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="17" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="34" count="18" type="stmt"/>
+        <line num="35" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="38" count="18" type="cond" truecount="4" falsecount="0"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="41" count="18" type="cond" truecount="2" falsecount="2"/>
+        <line num="42" count="18" type="stmt"/>
+        <line num="44" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="16" type="stmt"/>
+        <line num="47" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="14" type="stmt"/>
+        <line num="50" count="18" type="stmt"/>
+      </file>
+    </package>
     <package name="pages.AdminPage">
       <metrics statements="15" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="3"/>
       <file name="AdminPage.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/AdminPage/AdminPage.jsx">
         <metrics statements="15" coveredstatements="12" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="3"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
@@ -267,13 +303,13 @@
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
-        <line num="114" count="1" type="stmt"/>
-        <line num="117" count="1" type="stmt"/>
+        <line num="114" count="2" type="stmt"/>
+        <line num="117" count="2" type="stmt"/>
         <line num="118" count="0" type="stmt"/>
         <line num="120" count="0" type="stmt"/>
         <line num="121" count="0" type="stmt"/>
-        <line num="123" count="1" type="stmt"/>
-        <line num="127" count="1" type="stmt"/>
+        <line num="123" count="2" type="stmt"/>
+        <line num="127" count="2" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/AdminPage/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -298,50 +334,56 @@
       </file>
     </package>
     <package name="pages.CreateParcel.CreateParcelForm">
-      <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="index.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/CreateParcel/CreateParcelForm/index.jsx">
-        <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="19" count="8" type="stmt"/>
-        <line num="151" count="2" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
         <line num="152" count="2" type="stmt"/>
-        <line num="153" count="14" type="stmt"/>
-        <line num="154" count="14" type="stmt"/>
-        <line num="160" count="2" type="stmt"/>
+        <line num="153" count="2" type="stmt"/>
+        <line num="154" count="24" type="stmt"/>
+        <line num="155" count="24" type="stmt"/>
+        <line num="161" count="2" type="stmt"/>
       </file>
     </package>
     <package name="pages.HomePage">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="HomePage.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/HomePage/HomePage.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/HomePage/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="pages.ProfilePage">
-      <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="9"/>
+      <metrics statements="23" coveredstatements="19" conditionals="10" coveredconditionals="4" methods="12" coveredmethods="10"/>
       <file name="ProfilePage.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/ProfilePage/ProfilePage.jsx">
-        <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="9"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
+        <metrics statements="23" coveredstatements="19" conditionals="10" coveredconditionals="4" methods="12" coveredmethods="10"/>
+        <line num="13" count="2" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="55" count="3" type="stmt"/>
-        <line num="56" count="3" type="stmt"/>
-        <line num="57" count="3" type="stmt"/>
-        <line num="176" count="2" type="stmt"/>
-        <line num="180" count="3" type="stmt"/>
-        <line num="181" count="1" type="stmt"/>
-        <line num="182" count="1" type="stmt"/>
-        <line num="184" count="1" type="stmt"/>
-        <line num="187" count="2" type="stmt"/>
-        <line num="195" count="2" type="stmt"/>
+        <line num="42" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="72" count="3" type="stmt"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="74" count="3" type="stmt"/>
+        <line num="193" count="2" type="stmt"/>
+        <line num="198" count="3" type="stmt"/>
+        <line num="199" count="1" type="stmt"/>
+        <line num="200" count="0" type="stmt"/>
+        <line num="201" count="1" type="stmt"/>
+        <line num="203" count="1" type="stmt"/>
+        <line num="206" count="2" type="stmt"/>
+        <line num="216" count="2" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/ProfilePage/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -351,7 +393,7 @@
       <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="3"/>
       <file name="SuperAdmin.jsx" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/SuperAdminPage/SuperAdmin.jsx">
         <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="3"/>
-        <line num="9" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
@@ -359,19 +401,19 @@
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="84" count="1" type="stmt"/>
-        <line num="87" count="1" type="stmt"/>
+        <line num="84" count="2" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
         <line num="88" count="0" type="stmt"/>
         <line num="90" count="0" type="stmt"/>
-        <line num="92" count="1" type="stmt"/>
-        <line num="96" count="1" type="stmt"/>
+        <line num="92" count="2" type="stmt"/>
+        <line num="96" count="2" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/pages/SuperAdminPage/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="store.actions">
-      <metrics statements="143" coveredstatements="141" conditionals="4" coveredconditionals="3" methods="31" coveredmethods="30"/>
+      <metrics statements="155" coveredstatements="146" conditionals="4" coveredconditionals="3" methods="33" coveredmethods="30"/>
       <file name="authUser.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/store/actions/authUser.js">
         <metrics statements="31" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="6" count="6" type="stmt"/>
@@ -438,10 +480,10 @@
       </file>
       <file name="editAdminStatus.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/store/actions/editAdminStatus.js">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
@@ -470,28 +512,29 @@
         <line num="34" count="1" type="stmt"/>
       </file>
       <file name="editParcelLocation.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/store/actions/editParcelLocation.js">
-        <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
+        <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
       <file name="editParcelStatus.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/store/actions/editParcelStatus.js">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
@@ -504,10 +547,10 @@
       </file>
       <file name="getAllParcels.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/store/actions/getAllParcels.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
@@ -533,10 +576,10 @@
       </file>
       <file name="getAllUsers.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/store/actions/getAllUsers.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
@@ -544,6 +587,20 @@
         <line num="20" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="getStatistics.js" path="/Users/chidozienwoga/Documents/Sendit-react/src/store/actions/getStatistics.js">
+        <metrics statements="11" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
       </file>
     </package>
     <package name="store.reducers">

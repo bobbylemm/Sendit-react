@@ -128,7 +128,7 @@ AdminPage.propTypes = {
   editParcelStatus: PropTypes.func,
   getAllParcels: PropTypes.func,
   editParcelLocation: PropTypes.func,
-  allParcels: PropTypes.array,
+  allParcels: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
   allUsers: PropTypes.object
 };
 export default hoc(AdminPage);

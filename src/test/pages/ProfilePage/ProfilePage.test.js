@@ -4,6 +4,7 @@ import { ProfilePage, mapDispatchToProps } from '../../../pages/ProfilePage';
 
 const props = {
   getAllUserParcels: jest.fn(),
+  getAllStat: jest.fn(),
   cancelParcel: jest.fn(),
   editDropOffLocation: jest.fn(),
   tableNames: {}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import createParcels from '../../store/actions/createParcels';
-import CreateParcelForm from './CreateParcelForm/index';
+import CreateParcelForm from './CreateParcelForm';
 
 export class CreateParcel extends Component {
   handleSubmit = async values => {

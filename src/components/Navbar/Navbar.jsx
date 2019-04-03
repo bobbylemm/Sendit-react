@@ -57,7 +57,7 @@ const hoc = connect(
   null
 );
 NavBar.propTypes = {
-  isAdmin: PropTypes.bool,
+  isAdmin: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   loggedIn: PropTypes.bool
 };
 export default hoc(NavBar);

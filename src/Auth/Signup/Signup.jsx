@@ -18,7 +18,8 @@ export class Signup extends Component {
   };
 
   render() {
-    return <SignupForm onSubmit={this.handleSubmit} />;
+    const { isLoading } = this.props;
+    return <SignupForm onSubmit={this.handleSubmit} isLoading={isLoading} />;
   }
 }
 export const mapStateToProps = state => ({

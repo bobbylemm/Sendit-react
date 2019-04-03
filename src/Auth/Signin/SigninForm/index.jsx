@@ -22,7 +22,7 @@ const SigninForm = ({ pristine, handleSubmit, submitting, isLoading }) => (
       <FormCard>
         <h2>Sign In</h2>
         <form id="form" onSubmit={handleSubmit}>
-          <div className="row">
+          <div className="row my-1">
             <div className="col-3">
               <label className="label" htmlFor="email">
                 Email
@@ -39,7 +39,7 @@ const SigninForm = ({ pristine, handleSubmit, submitting, isLoading }) => (
               />
             </div>
           </div>
-          <div className="row">
+          <div className="row my-1">
             <div className="col-3">
               <label className="label" htmlFor="password">
                 Password
@@ -56,7 +56,6 @@ const SigninForm = ({ pristine, handleSubmit, submitting, isLoading }) => (
               />
             </div>
           </div>
-          <div className="message" />
           <div className="row">
             <div className="col-3" />
             <div className="col-9">

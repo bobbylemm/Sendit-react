@@ -42,17 +42,6 @@ exports[`Test the snapshot of the home page should match the snapshot 1`] = `
               Get started
             </a>
           </button>
-          <button
-            className="py-3 sc-bdVaJa gasapN"
-            type="button"
-          >
-            <a
-              href="/track-parcels"
-              onClick={[Function]}
-            >
-              Track deliveries
-            </a>
-          </button>
         </div>
       </div>
     </div>
@@ -92,17 +81,6 @@ exports[`Test the snapshot of the home page should match the snapshot 1`] = `
               Get started
             </a>
           </button>
-          <button
-            className="py-3 sc-bdVaJa gasapN"
-            type="button"
-          >
-            <a
-              href="/track-parcels"
-              onClick={[Function]}
-            >
-              Track deliveries
-            </a>
-          </button>
         </div>
       </div>
     </div>
@@ -140,17 +118,6 @@ exports[`Test the snapshot of the home page should match the snapshot 1`] = `
               onClick={[Function]}
             >
               Get started
-            </a>
-          </button>
-          <button
-            className="py-3 sc-bdVaJa gasapN"
-            type="button"
-          >
-            <a
-              href="/track-parcels"
-              onClick={[Function]}
-            >
-              Track deliveries
             </a>
           </button>
         </div>
@@ -197,7 +164,7 @@ exports[`Test the snapshot of the home page should match the snapshot 1`] = `
           >
             <img
               alt="card"
-              src="../../images/create-order.jpg"
+              src="test-file-stub"
             />
             <p>
               Generate your parcel delivery, weighing from 100kg - 1000000kg.
@@ -213,7 +180,7 @@ exports[`Test the snapshot of the home page should match the snapshot 1`] = `
           >
             <img
               alt="edit"
-              src="../../images/maarten-van-den-heuvel-246398-unsplash.jpg"
+              src="test-file-stub"
             />
             <p>
               Edit your parsel delivery, and arrange them according to your choice.
@@ -232,8 +199,8 @@ exports[`Test the snapshot of the home page should match the snapshot 1`] = `
             className="description-cards"
           >
             <img
-              alt="card"
-              src="../../images/rhys-moult-328651-unsplash.jpg"
+              alt="track-card"
+              src="test-file-stub"
             />
             <p>
               Be aware of your package location at every given point in time
@@ -248,8 +215,8 @@ exports[`Test the snapshot of the home page should match the snapshot 1`] = `
             className="description-cards"
           >
             <img
-              alt="recieve"
-              src="../../images/receive-parcel.jpg"
+              alt="receive-order-pic"
+              src="test-file-stub"
             />
             <p>
               Expect your package at the given time

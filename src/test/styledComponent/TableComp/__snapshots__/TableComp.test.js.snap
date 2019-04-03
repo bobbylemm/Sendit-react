@@ -24,6 +24,7 @@ exports[`testing the button element should mount button 2`] = `
     display: block;
     font-size: 1.5rem;
     margin: 0.4rem;
+    text-align: unset;
   }
 
   .c0 .parcel-detail {
@@ -81,8 +82,13 @@ exports[`testing the button element should mount button 5`] = `
 
 exports[`testing the button element should mount button 6`] = `
 .c0 {
-  text-align: center;
   height: 5.2rem;
+}
+
+@media (max-width:650px) {
+  .c0 tr {
+    text-align: unset !important;
+  }
 }
 
 <tr

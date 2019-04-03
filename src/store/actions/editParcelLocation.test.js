@@ -47,15 +47,13 @@ describe('testing get all parcels in application', () => {
       },
       {
         type: ADMIN_EDIT_PARCEL_SUCCESS,
-        payload: {
-          data: [
-            {
-              parcel_id: 1,
-              status: 'user',
-              present_location: { newLocation: 'lekki' }
-            }
-          ]
-        }
+        payload: [
+          {
+            parcel_id: 1,
+            status: 'user',
+            present_location: { newLocation: 'lekki' }
+          }
+        ]
       }
     ];
     expect(store.getActions()).toEqual(expectActions);

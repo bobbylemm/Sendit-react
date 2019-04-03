@@ -26,9 +26,6 @@ const Homepage = () => (
             <Button type="button" className="py-3" primary inlineButton>
               <Link to="/create-parcel">Get started</Link>
             </Button>
-            <Button type="button" className="py-3" primary inlineButton>
-              <Link to="/track-parcels">Track deliveries</Link>
-            </Button>
           </div>
         </div>
       </div>
@@ -48,9 +45,6 @@ const Homepage = () => (
             <Button type="button" className="py-3" primary inlineButton>
               <Link to="/create-parcel">Get started</Link>
             </Button>
-            <Button type="button" className="py-3" primary inlineButton>
-              <Link to="/track-parcels">Track deliveries</Link>
-            </Button>
           </div>
         </div>
       </div>
@@ -69,9 +63,6 @@ const Homepage = () => (
             </div>
             <Button type="button" className="py-3" primary inlineButton>
               <Link to="/create-parcel">Get started</Link>
-            </Button>
-            <Button type="button" className="py-3" primary inlineButton>
-              <Link to="/track-parcels">Track deliveries</Link>
             </Button>
           </div>
         </div>

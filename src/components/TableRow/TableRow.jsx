@@ -273,11 +273,18 @@ class TableRow extends Component {
               </SpanView>
             </Td>
             <Tdbig>
-              <Button id={parcelId} small onClick={e => this.handleEdit(e)}>
+              <Button
+                id={parcelId}
+                className="w-3"
+                small
+                onClick={e => this.handleEdit(e)}>
                 edit
               </Button>
               {profileTable ? (
-                <Button small onClick={e => this.handleCancel(e)}>
+                <Button
+                  className="w-3"
+                  small
+                  onClick={e => this.handleCancel(e)}>
                   cancel
                 </Button>
               ) : null}

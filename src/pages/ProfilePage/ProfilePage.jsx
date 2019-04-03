@@ -5,6 +5,7 @@ import Loader from 'react-loader-spinner';
 import Parcels from '../../components/Table/index';
 import Button from '../../components/styledComponent/Button';
 import getAllUserparcels from '../../store/actions/getAllUserParcels';
+import getAllStats from '../../store/actions/getStatistics';
 import editDropOfflocation from '../../store/actions/editDropOffLocation';
 import cancelparcel from '../../store/actions/cancelParcel';
 import '../../css/profile.scss';
@@ -26,13 +27,29 @@ export class ProfilePage extends Component {
   constructor() {
     super();
     this.state = {
-      view1: true
+      view1: true,
+      deliveredParcels: '',
+      undeliveredParcels: ''
     };
   }
 
   componentDidMount() {
-    const { getAllUserParcels } = this.props;
+    const { getAllUserParcels, getAllStat } = this.props;
+    getAllStat();
     getAllUserParcels();
+  }
+  static getDerivedStateFromProps(props, state) {
+    if (props.stats === undefined) return null;
+    if (
+      props.stats.delivered !== state.deliveredParcels ||
+      props.stats.undelivered !== state.undeliveredParcels
+    ) {
+      return {
+        deliveredParcels: props.stats.delivered,
+        undeliveredParcels: props.stats.undelivered
+      };
+    }
+    return null;
   }
 
   handleView1 = () => {
@@ -53,7 +70,7 @@ export class ProfilePage extends Component {
       cancelParcel,
       userParcels: { data, isLoading }
     } = this.props;
-    const { view1 } = this.state;
+    const { view1, deliveredParcels, undeliveredParcels } = this.state;
     return (
       <main>
         <div className="section">
@@ -103,7 +120,7 @@ export class ProfilePage extends Component {
                             parcels delivered
                           </span>
                           <span className="parcel-detail" id="parcelsDelivered">
-                            0
+                            {deliveredParcels}
                           </span>
                         </td>
                         <td>
@@ -113,7 +130,7 @@ export class ProfilePage extends Component {
                           <span
                             className="parcel-detail"
                             id="parcelsUnDelivered">
-                            0
+                            {undeliveredParcels}
                           </span>
                         </td>
                       </tr>
@@ -174,11 +191,13 @@ export class ProfilePage extends Component {
 }
 
 const mapStateToProps = state => ({
-  userParcels: state.userParcels
+  userParcels: state.userParcels,
+  stats: state.stats.data[0]
 });
 
 export const mapDispatchToProps = dispatch => ({
   getAllUserParcels: () => dispatch(getAllUserparcels()),
+  getAllStat: () => dispatch(getAllStats()),
   cancelParcel: id => dispatch(cancelparcel(id)),
   editDropOffLocation: (id, newLocation) =>
     dispatch(editDropOfflocation(id, newLocation))
@@ -187,9 +206,11 @@ export const mapDispatchToProps = dispatch => ({
 ProfilePage.propTypes = {
   editDropOffLocation: PropTypes.func,
   cancelParcel: PropTypes.func,
+  getAllStat: PropTypes.func,
   getAllUserParcels: PropTypes.func,
   isLoading: PropTypes.bool,
-  userParcels: PropTypes.object
+  userParcels: PropTypes.object,
+  stats: PropTypes.object
 };
 
 const hoc = connect(

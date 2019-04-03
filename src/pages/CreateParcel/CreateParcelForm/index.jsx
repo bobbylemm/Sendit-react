@@ -8,6 +8,7 @@ import Loader from 'react-loader-spinner';
 import InputField from '../../../components/Input';
 import Button from '../../../components/styledComponent/Button';
 import BackgroundImg from '../../../components/styledComponent/BackgroundImg';
+import { validateNewParcel } from '../../../helpers/index';
 
 let CreateParcelForm = ({
   handleSubmit,
@@ -30,7 +31,7 @@ let CreateParcelForm = ({
               <form id="form" onSubmit={handleSubmit}>
                 <h2>Create a parcel order</h2>
                 <div className="d-inline col-9">
-                  <div className="row">
+                  <div className="row py-1">
                     <div className="col-3">
                       <label className="label" htmlFor="packageName">
                         Package name
@@ -48,7 +49,7 @@ let CreateParcelForm = ({
                     </div>
                   </div>
                   {/*  */}
-                  <div className="row">
+                  <div className="row py-1">
                     <div className="col-3">
                       <label className="label" htmlFor="parcelLocation">
                         Pickup location
@@ -66,7 +67,7 @@ let CreateParcelForm = ({
                     </div>
                   </div>
                   {/*  */}
-                  <div className="row">
+                  <div className="row py-1">
                     <div className="col-3">
                       <label className="label" htmlFor="dropOffLocation">
                         Destination
@@ -84,7 +85,7 @@ let CreateParcelForm = ({
                     </div>
                   </div>
                   {/*  */}
-                  <div className="row">
+                  <div className="row py-1">
                     <div className="col-3">
                       <label className="label" htmlFor="quantity">
                         Parcel quantity
@@ -102,7 +103,7 @@ let CreateParcelForm = ({
                     </div>
                   </div>
                   {/*  */}
-                  <div className="row">
+                  <div className="row py-1">
                     <div className="col-3">
                       <label className="label" htmlFor="weight">
                         Weight (kg)
@@ -119,7 +120,7 @@ let CreateParcelForm = ({
                       />
                     </div>
                   </div>
-                  <div className="row">
+                  <div className="row py-1">
                     <div className="col-3" />
                     <div className="col-9">
                       <Button
@@ -164,7 +165,7 @@ CreateParcelForm.propTypes = {
   quantity: PropTypes.number,
   weight: PropTypes.number
 };
-
 export default reduxForm({
-  form: 'create-parcel-form'
+  form: 'createParcelForm',
+  validate: validateNewParcel
 })(CreateParcelForm);
